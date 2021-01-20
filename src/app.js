@@ -62,7 +62,7 @@ app.put("/repositories/:id", (request, response) => {
     likes: repositories[repositoryIndex].likes
   }
 
-  repositorys[repositoryIndex] = repository
+  repositories[repositoryIndex] = repository
 
   return response.json(repository)
 });
